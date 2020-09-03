@@ -28,11 +28,11 @@ The data used are available in public domain:
 
 1. Higgs dataset has been produced using Monte Carlo simulations at Physics & Astronomy, Univ. of California Irvine. The dataset can be found at (http://archive.ics.uci.edu/ml/datasets/HIGGS).
 
-It is a classification problem and identifies exotic particles in high-energy physics based on the sensors information(Signal process produces Higgs bosons (label 1)           and a background process does not (label 0)).
+It is a classification problem and identifies exotic particles in high-energy physics based on the sensors information. The postitive class (label 1) corresponds to signal sample for which events that produced Higgs bosons occured while the negative class (label 0) are for signal samples in which these events did no occur (i.e only background processes where in the signal sample).
 
-The first 21 features (columns 2-22) are kinematic properties measured by the particle detectors in the accelerator. The last seven features are functions of the first 21 features which are high-level features derived by physicists to help discriminate between the two classes. For this project, we ignore the last 7 columns and use Featuretools python library (https://www.featuretools.com/) to create new features and compare with previous studies.
+The first 21 features (columns 2-22) are kinematic properties measured by the particle detectors in the accelerator. The last seven features are functions of the first 21 features which are high-level features derived by physicists to help discriminate between the two classes. For this project, we ignore the last 7 columns and use **[Featuretools](https://www.featuretools.com/)** python library to create new features and compare with previous studies. More details on the data and features can be found on the documentation from the HiggsML webpage: (https://higgsml.lal.in2p3.fr/files/2014/04/documentation_v1.8.pdf).
 
-2. Credit card fraud dataset is an imbalanced classification problem ~ 500:1. The dataset is taken from Kaggle has 30 features where 28 are derived from PCA. This problem involves creating the custom evaluation function in LightGBM and XGBoost
+2. The Credit card Fraud Detection dataset is a widely used dataset for studying the imbalanced classification problem. It has a ratio of 500 negative:1 positive class instances. The dataset is taken from **[Kaggle](https://www.kaggle.com/mlg-ulb/creditcardfraud)** and has 30 features, 28 of which are PCA transformations to perserve confidentiality.
 
 ---
 
